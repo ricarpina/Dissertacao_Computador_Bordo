@@ -1,0 +1,15 @@
+#include <xc.h>
+#include "../measuresPlate.h"
+
+void enviar_todas_variaveis(EASY_CAN1_MSG* msg, unsigned char tam){
+	unsigned char i=0;
+	for(i=0;i<tam;i++){
+		easy_can1_send_msg(*(mens+(sizeof(*mens)*i)));
+	}
+}
+
+void atualizar_mens_can(void){
+
+	
+
+}

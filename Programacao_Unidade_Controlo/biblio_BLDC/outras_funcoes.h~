@@ -1,0 +1,41 @@
+
+unsigned char max_array(unsigned int* array, unsigned char tam){
+	unsigned char location =0;
+	unsigned int maximum = *array;
+	unsigned char c = 0;
+  for (c = 1; c < size; c++)
+  {
+    if (array[c] > maximum)
+    {
+       maximum  =*(array+sizeof(float)*c);
+       location = c;
+    }
+  }
+	return location;
+}
+
+unsigned char min_array(unsigned int* array, unsigned char tam){
+	unsigned char location =0;
+	unsigned int minimum = *array;
+	unsigned char c = 0;
+  for (c = 1; c < tam; c++)
+  {
+    if (*(array+sizeof(float)*c) < minimum)
+    {
+       minimum  =*(array+sizeof(float)*c);
+       location = c;
+    }
+  }
+	return location;
+}
+
+float somatorio_array(float* array, unsigned char tam){
+
+	unsigned char c = 0;
+	unsigned int valor = 0;
+  for (c = 1; c < tam; c++)
+  {
+       valor += *(array+sizeof(float)*c);
+  }
+
+}
